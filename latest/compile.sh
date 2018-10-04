@@ -14,7 +14,7 @@ chown -R user:user /home/user;
          mkdir -p /.theia && \
          chmod g+rw /home &&  \
          mkdir -p /.npm && \
-         chmod g+rw /.npm && chmod g+rw /.theia && chmod g+rw /home/project && \
+         chmod g+rw /.npm && chmod g+rw /.theia && \
          chown -R user:user /.npm;
          chgrp -R 0 /home/user && \
          chmod a+x /home/user/entrypoint && \
