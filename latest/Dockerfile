@@ -21,5 +21,5 @@ EXPOSE 3000
 ENV SHELL /bin/bash
 ENV USE_LOCAL_GIT true
 USER 10001
-ENTRYPOINT ["/home/theia/entrypoint"]
+ENTRYPOINT ["/home/user/entrypoint"]
 CMD ["node", "--expose-gc", "--max-old-space-size=128", "--max-new-space-size=256", "/opt/app/server.js"]
