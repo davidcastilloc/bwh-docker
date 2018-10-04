@@ -39,7 +39,7 @@ jobs:
           command: docker build -t claritymoe/bandwidth-hero-proxy:latest ./latest
       - run:
           name: Docker Push (Theia Latest)
-          command: docker login -u $DOCKER_USER -p $DOCKER_PASS && docker push chinodesuuu/bandwidth-hero-proxy:latest          
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS && docker push cla/bandwidth-hero-proxy:latest          
         
 workflows:
   version: 2
