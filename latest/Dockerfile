@@ -1,6 +1,6 @@
 # Build Layer
 FROM node:8
-RUN apt-get -y install make gcc g++ python git clang automake
+RUN apt-get update && apt-get -y install make gcc g++ python git clang automake
 RUN adduser --disabled-password --gecos '' theia && \
     mkdir -p /etc/sudoers.d && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
