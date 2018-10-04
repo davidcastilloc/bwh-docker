@@ -13,7 +13,7 @@ RUN cd app && \
 
 # Run layer
 FROM node:8
-COPY entrypoint /home/theia/
+COPY entrypoint /home/user/
 ADD compile.sh /tmp/
 RUN cd /tmp/ && bash compile.sh
 COPY --from=0 /opt/app /opt/app
