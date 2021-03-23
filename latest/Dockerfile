@@ -22,4 +22,4 @@ ENV SHELL /bin/bash
 ENV USE_LOCAL_GIT true
 USER 10001
 ENTRYPOINT ["/home/user/entrypoint"]
-CMD ["node", "--expose-gc", "--max-old-space-size=128", "/opt/app/server.js"]
+CMD ["node", "--expose-gc", "/opt/app/server.js"]
